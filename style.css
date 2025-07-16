@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+
+
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+
+.data-percent {
+
+    --angle: 360deg;
+    --color: blue;
+
+    display: grid;
+    place-items: center;
+
+    position: relative;
+    z-index: 100;
+    
+    height: 200px;
+    aspect-ratio: 1/1;
+    background: conic-gradient(var(--color) 0, var(--color) var (--angle), white var (--angle), white 360deg);
+}
