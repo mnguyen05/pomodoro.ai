@@ -28,5 +28,48 @@ body {
     
     height: 200px;
     aspect-ratio: 1/1;
-    background: conic-gradient(var(--color) 0, var(--color) var (--angle), white var (--angle), white 360deg);
+    border-radius: 50%;
+    background: conic-gradient(var(--color) 0, var(--color) var(--angle), white var(--angle), white 360deg);
+}
+
+
+.data-percent::after {
+    
+    content: '';
+
+    position: absolute;
+
+    z-index: -1;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    background: white;
+    border-radius: 50%;
+
+
+    
+}
+
+#timer {
+    font-size: 2rem;
+    align-self: flex-end;
+}
+
+#mode {
+    align-self: flex-start;
+
+}
+
+
+.d-flex {display:flex}
+.flex-column {flex-direction:column;}
+.align-items-center{align-items: center;}
+.justify-content-creator{justify-content: center;}
+.gap-10 {gap: 10px;}
+.d-none {display: none;}
+button {
+    outline: none;
+    border: none;
+    background: transparent;
 }
